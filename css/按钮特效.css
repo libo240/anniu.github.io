@@ -1,0 +1,296 @@
+body
+{
+	text-align: center;
+	}/*黑色背景高端大气上档次*/
+
+h1
+{
+	margin-top:20px;
+	margin-bottom: 0px;
+	color: darkolivegreen;
+}
+
+button
+{
+	display: inline-block;
+	line-height: 1.5;
+	margin: 20px;
+	margin-top: 10px;
+	padding: 0px 15px;
+	font-size: 21px;
+	position: relative;/*模块存在*/
+	cursor: pointer;
+	background-color:transparent;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;	
+	box-shadow: 5px 5px 5px #888888;
+	z-index: 1;
+}
+
+section
+{
+	margin: 50px;
+}
+
+section:after
+{
+	content: "";
+	display: block;
+	width: 40%;
+	border: dotted 2px teal;
+	position: relative;
+	left: 30%;
+}
+
+div
+{
+	height: 100px;
+}
+
+div p
+{
+	position: relative;
+	top: 60%;
+}
+
+.one:after,.one:before,.one,.two:after,.two:before,.two,.three:after,.three:before,.three
+{
+	transition: all 1s;
+	-webkit-transition:all  1s;
+	-moz-transition:all 1s;
+}
+
+.greenyellow,.dodgerblue,.orange,.crimson,.darkdlategrey
+{
+	transition: all 1s;
+	-webkit-transition:all  1s;
+	-moz-transition:all 1s;
+}
+
+#one
+{
+	color: black;
+	text-align: center;
+}
+
+.one:after,.one:before
+{
+	content: "";
+	border-style: solid;
+	position: absolute;
+	border-radius: 5px;
+	z-index: -1;
+}
+
+.one:after
+{
+	width: 100%;
+	height: 0;
+	border-width: 0 1px 0 1px;
+	top: -1px;
+	left: -1px;
+}
+
+.one:before
+{
+	width: 0;
+	height: 100%;
+	border-width: 1px 0 1px 0;
+	left: -1px;
+	top: -1px;
+}
+
+.one:hover:after
+{
+	height: 100%;
+}
+
+.one:hover:before
+{
+	width: 100%;
+}
+
+button:hover
+{
+	box-shadow: 0 0 0;
+}
+
+.greenyellow.one:hover:after,.greenyellow.one:hover:before,.greenyellow.one:hover
+{
+	color: greenyellow;
+	border-color: greenyellow;
+}
+
+.dodgerblue.one:hover:after,.dodgerblue.one:hover:before,.dodgerblue.one:hover
+{
+	color: dodgerblue;
+	border-color:dodgerblue;
+}
+
+.orange.one:hover:after,.orange.one:hover:before,.orange.one:hover
+{
+	color: orange;
+	border-color:orange;
+}
+
+
+.crimson.one:hover:after,.crimson.one:hover:before,.crimson.one:hover
+{
+	color: crimson;
+	border-color:crimson;
+}
+
+.darkdlategrey.one:hover:after,.darkdlategrey.one:hover:before,.darkdlategrey.one:hover
+{
+	color: darkslategrey;
+	border-color:darkslategrey;
+}
+
+
+
+
+
+
+.two:after,.two:before
+{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.two:after
+{
+	top: 50%;
+}
+
+.two:before
+{
+	bottom: 50%;
+}
+
+.two:hover:before,.two:hover:after
+{
+	height: 50%;
+	opacity: 1;
+}
+
+
+.greenyellow.two:after,.greenyellow.two:before
+{
+	color: white;
+	opacity: 1;
+	background-color: greenyellow;
+}
+
+.dodgerblue.two:after,.dodgerblue.two:before
+{
+	color: white;
+	opacity: 1;
+	background-color: dodgerblue;
+}
+
+.crimson.two:after,.crimson.two:before
+{
+	color: white;
+	opacity: 1;
+	background-color: crimson;
+}
+
+
+.orange.two:after,.orange.two:before
+{
+	color: white;
+	opacity: 1;
+	background-color: orange;
+}
+
+.darkdlategrey.two:after,.darkdlategrey.two:before
+{
+	color: white;
+	opacity: 1;
+	background-color: darkslategrey;
+}
+
+.two:hover
+{
+	color: white;
+}
+
+
+
+.three:after,.three:before
+{
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	opacity: 0;
+	z-index: -1;
+}
+
+.three:after
+{
+	right: 50%;
+}
+
+.three:before
+{
+	left: 50%;
+}
+
+.three:hover:before,.three:hover:after
+{
+	opacity: 1;
+	width: 50%;
+}
+
+.three:hover
+{
+	color: #fff;
+	box-shadow: 0 0 0;
+}
+
+.greenyellow.three:after,.greenyellow.three:before
+{
+	color: white;
+	opacity: 1;
+	background-color: greenyellow;
+}
+
+.dodgerblue.three:after,.dodgerblue.three:before
+{
+	color: white;
+	opacity: 1;
+	background-color: dodgerblue;
+}
+
+.crimson.three:after,.crimson.three:before
+{
+	color: white;
+	opacity: 1;
+	background-color: crimson;
+}
+
+
+.orange.three:after,.orange.three:before
+{
+	color: white;
+	opacity: 1;
+	background-color: orange;
+}
+
+.darkdlategrey.three:after,.darkdlategrey.three:before
+{
+	color: white;
+	opacity: 1;
+	background-color: darkslategrey;
+}
+
+.three:hover
+{
+	color: white;
+}
